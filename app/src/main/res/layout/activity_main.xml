@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="250dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="50dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/myedittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="@string/hinttext"
+        android:inputType="text"
+        android:text="@string/editmessage"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <CheckBox
+        android:id="@+id/chk1"
+        android:layout_width="166dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="35dp"
+        android:text="Do you drink coffee?"
+        app:layout_constraintBottom_toTopOf="@+id/rd1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rd1"
+        android:layout_width="161dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="46dp"
+        android:text="Do you drink coffee?"
+        app:layout_constraintBottom_toTopOf="@+id/swt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chk1" />
+
+    <Switch
+        android:id="@+id/swt1"
+        android:layout_width="179dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="416dp"
+        android:text="Do you drink coffee?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="184dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/myedittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt1"
+        app:srcCompat="@drawable/th" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="87dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
